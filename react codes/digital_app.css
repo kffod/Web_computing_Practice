@@ -1,0 +1,13 @@
+App.css
+
+.digital-clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  height: 100vh;
+}
+
+.digital-clock {
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Background Color Change</title>
+</head>
+<body>
+  <h1>Background Color Changer</h1>
+  <script>
+    const colors = ["red", "green", "blue", "indigo", "violet"];
+    let currentIndex = 0;
+    let size = colors.length;
+
+    function changeBackgroundColor() {
+      document.body.style.backgroundColor = colors[currentIndex];
+      currentIndex = (currentIndex + 1) % size;
+    }
+
+    setInterval(changeBackgroundColor, 5000);
+  </script>
+</body>
+</html>

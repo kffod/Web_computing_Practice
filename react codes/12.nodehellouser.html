@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greet App</title>
+</head>
+<body>
+    <h1>Hello <span id="username">Guest</span></h1>
+    <button id="greet-button">Greet App</button>
+
+    <script>
+        const greetButton = document.getElementById("greet-button");
+        const usernameSpan = document.getElementById("username");
+
+        greetButton.addEventListener("click", () => {
+            const newUsername = prompt("Enter your username:");
+            if (newUsername !== null) {
+                usernameSpan.textContent = newUsername;
+            }
+        });
+    </script>
+</body>
+</html>
